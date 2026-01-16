@@ -1,0 +1,53 @@
+body{
+	padding:0;
+	margin:0;
+	font-size:16px;
+	color:#394c56;
+}
+#body{
+	max-width:1200px;
+	margin:auto;
+}
+.container{
+	padding: 30px 20px 50px 20px;
+    background: #eeeded;
+}
+.staff-image img{
+	width:100px;
+}
+.h-flex{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.staff-info a{
+	text-decoration: none;
+	display: block;
+    padding-bottom: 10px;
+}
+.staff-info a, .inner-list{
+	color:#000;
+}
+.certifications a{
+	color: #e2ac7f;
+}
+.list-item-inner{
+	list-style:none;
+}
+.list-item{
+	border-left: 1px solid #c0bcbc;
+    padding-left: 13px;
+}
+.item{
+	padding-bottom: 10px;
+}
+.list-item h4{
+	margin:0;
+}
+.projects a{
+	color:#394c56;
+}
+.about section h3{
+	background: #d1d1d1;
+    padding-left: 10px;
+}
