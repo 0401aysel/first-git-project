@@ -12,6 +12,15 @@ body{
 	font-size:16px;
 	color:var(--main-color);
 }
+.header{
+	position: relative;
+	padding-top:20px;
+}
+.change-mode{
+	position: absolute;
+	right:10px;
+	top:0px;
+}
 #body{
 	max-width:1220px;
 	margin:auto;
@@ -58,4 +67,26 @@ body{
 .about section h3{
 	background: var(--sec-bg-color);
     padding-left: 10px;
+}
+.change-mode {
+    position: absolute;
+    right: 10px;
+    border-radius: 20px;
+    top: 0px;
+    width: 50px;
+    height: 18px;
+    background: grey;
+    border: none;
+}
+.change-item {
+    width: 20px;
+    border-radius: 20px;
+    height: 14px;
+    display: block;
+    text-align: -10px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-align: 0;
+    background: white;
 }
