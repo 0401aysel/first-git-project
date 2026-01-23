@@ -83,10 +83,12 @@ body{
     border-radius: 20px;
     height: 14px;
     display: block;
-    text-align: -10px;
     position: absolute;
     top: 2px;
     right: 2px;
-    text-align: 0;
     background: white;
+	transition: 0.4s;
+}
+body.dark .change-item {
+   transform:translateX(-25px)
 }
