@@ -1,8 +1,16 @@
+:root{
+	--main-color:#466488;
+	--background-container:#eeeded;
+	--inner-list:#000;
+	--certf-color:#e2ac7f;
+	--sec-bg-color:#d1d1d1;
+	--list-border:#c0bcbc;
+}
 body{
 	padding:0;
 	margin:0;
 	font-size:16px;
-	color:#000000;
+	color:var(--main-color);
 }
 #body{
 	max-width:1220px;
@@ -10,7 +18,7 @@ body{
 }
 .container{
 	padding: 30px 20px 50px 20px;
-    background: #eeeded;
+    background: var(--background-container);
 }
 .staff-image img{
 	width:100px;
@@ -26,16 +34,16 @@ body{
     padding-bottom: 10px;
 }
 .staff-info a, .inner-list{
-	color:#000;
+	color:var(--inner-list);
 }
 .certifications a{
-	color: #e2ac7f;
+	color: var(--certf-color);
 }
 .list-item-inner{
 	list-style:none;
 }
 .list-item{
-	border-left: 1px solid #c0bcbc;
+	border-left: 1px solid var(--list-border);
     padding-left: 13px;
 }
 .item{
@@ -45,9 +53,9 @@ body{
 	margin:0;
 }
 .projects a{
-	color:#394c56;
+	color:var(--main-color);
 }
 .about section h3{
-	background: #d1d1d1;
+	background: var(--sec-bg-color);
     padding-left: 10px;
 }
