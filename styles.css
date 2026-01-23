@@ -1,16 +1,21 @@
 :root{
 	--main-color:#466488;
-	--background-container:#eeeded;
-	--inner-list:#000;
+	--bg-container:#eeeded;
+	--black:#000000;
 	--certf-color:#e2ac7f;
 	--sec-bg-color:#d1d1d1;
 	--list-border:#c0bcbc;
+	--body-dark:#6d6d6d;
+	--project-dark:#75a1d7;
 }
 body{
 	padding:0;
 	margin:0;
 	font-size:16px;
 	color:var(--main-color);
+}
+body.dark{
+	background:var(--body-dark);
 }
 .header{
 	position: relative;
@@ -27,7 +32,11 @@ body{
 }
 .container{
 	padding: 30px 20px 50px 20px;
-    background: var(--background-container);
+    background: var(--bg-container);
+}
+body.dark .container{
+	background-color: var(--black);
+    color: white;
 }
 .staff-image img{
 	width:100px;
@@ -43,7 +52,10 @@ body{
     padding-bottom: 10px;
 }
 .staff-info a, .inner-list{
-	color:var(--inner-list);
+	color:var(--black);
+}
+body.dark .staff-info a, body.dark .inner-list{
+	color:#cdc0c0;
 }
 .certifications a{
 	color: var(--certf-color);
@@ -64,9 +76,15 @@ body{
 .projects a{
 	color:var(--main-color);
 }
+body.dark .projects a{
+	color:var(--project-dark);
+}
 .about section h3{
 	background: var(--sec-bg-color);
     padding-left: 10px;
+}
+body.dark .about section h3{
+	background-color: var(--body-dark);
 }
 .change-mode {
     position: absolute;
@@ -90,5 +108,6 @@ body{
 	transition: 0.4s;
 }
 body.dark .change-item {
-   transform:translateX(-25px)
+   transform:translateX(-25px);
+   background: var(--black);
 }
